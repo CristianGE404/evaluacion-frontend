@@ -1,0 +1,60 @@
+/* Estilos Base y Accesibilidad */
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif; }
+html { scroll-behavior: smooth; }
+
+/* Navegación (Requisito 56) */
+nav { background: #222; padding: 1rem; position: sticky; top: 0; z-index: 100; }
+nav ul { list-style: none; display: flex; justify-content: center; gap: 30px; }
+nav a { color: white; text-decoration: none; font-weight: bold; }
+nav a:hover { color: #e74c3c; }
+
+/* Header con color resaltado (Requisito 57) */
+header {
+    background-color: #c0392b; /* Rojo resaltado */
+    color: white;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    box-shadow: inset 0 0 100px rgba(0,0,0,0.5);
+}
+
+/* Títulos de sección */
+.titulo-seccion { text-align: center; margin: 40px 0; font-size: 2rem; }
+
+/* Sección Ofertas - 3 cuadros alineados (Requisito 59) */
+.contenedor-ofertas {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.tarjeta-oferta {
+    border: 2px solid #ddd; /* Recuadro definido */
+    border-radius: 8px;
+    width: 300px;
+    padding: 15px;
+    text-align: center;
+    background: #f9f9f9;
+}
+
+.tarjeta-oferta img { width: 100%; border-radius: 5px; margin-bottom: 10px; }
+.valor { color: #c0392b; font-weight: bold; font-size: 1.2rem; margin-top: 5px; }
+
+/* Galería - 4 imágenes (Requisito 61) */
+.grid-galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    max-width: 900px;
+    margin: 0 auto 50px auto;
+}
+
+.grid-galeria img { width: 100%; height: 250px; object-fit: cover; border-radius: 5px; }
+
+/* Footer (Requisito 62) */
+footer { background: #222; color: white; padding: 30px; text-align: center; }
+footer a { color: #f1c40f; text-decoration: none; }
